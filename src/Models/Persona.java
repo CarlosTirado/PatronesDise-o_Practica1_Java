@@ -13,7 +13,7 @@ public abstract class Persona {
     protected String Identificacion;
     protected String Nombre;
     
-     public abstract String MostrarPersona();
+     public abstract String ToString();
         
     public final void SetNombre(String nombre) {
         this.Nombre = nombre.toUpperCase();
@@ -23,3 +23,4 @@ public abstract class Persona {
         this.Identificacion = identificacion;
     }
 }
+ 

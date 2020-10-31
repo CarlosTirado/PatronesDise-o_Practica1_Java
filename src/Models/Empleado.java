@@ -13,9 +13,9 @@ public abstract class Empleado extends Persona{
     
     protected double SalarioBase;
      
-    public abstract String MostrarPersona();
+    public abstract String ToString();
 
-    public void SetSalario(Double salario) 
+    public void SetSalarioBase(Double salario) 
     {
         SalarioBase = salario;
     }

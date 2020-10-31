@@ -3,18 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Models;
+package Presentacion.GUI.PedirPersona.Factory;
+
 
 /**
  *
  * @author LENOVO
  */
-public class Cliente extends Persona {
-    
-    @Override
-    public String ToString()
-    {
-        return "Identificación: " + Identificacion + " - Nombre: " + Nombre;
-    }
-    
+public interface IPedirPersonaGUIServiceFactory {
+    IPedirPersonaGUIService Fabricar(String tipoPersona);
 }

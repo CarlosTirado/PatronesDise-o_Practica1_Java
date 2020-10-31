@@ -5,21 +5,18 @@
  */
 package Presentacion.GUI;
 
-import Models.Persona;
+import Presentacion.GUI.PedirPersona.PedirPersonaGUIService;
 import Presentacion.Consola.MostrarPersonasConsolaService;
-import Presentacion.Consola.PedirPersona.PedirPersonaConsolaService;
 import Presentacion.Consola.PreguntarSiPedirOtraPersonaConsolaService;
-import Presentacion.Consola.PreguntarTipoPersonaConsolaService;
 import Presentacion.Interfaces.IManejadorPresentacionAbstractFactory;
 import Presentacion.Interfaces.IMostrarPersonasService;
 import Presentacion.Interfaces.IPedirPersonaService;
 import Presentacion.Interfaces.IPreguntarSiPedirOtraPersonaService;
 import Presentacion.Interfaces.IPreguntarTipoPersonaService;
-import java.util.ArrayList;
 
 /**
- *
- * @author LENOVO
+ * 
+ * @author LENOVO 
  */
 public class ManejadorPresentacionGUI implements IManejadorPresentacionAbstractFactory {
 
@@ -31,18 +28,17 @@ public class ManejadorPresentacionGUI implements IManejadorPresentacionAbstractF
 
     @Override
     public IPedirPersonaService CrearPedirPersonaService() {
-        return new PedirPersonaConsolaService();
+        return new PedirPersonaGUIService();
     }
 
     @Override
     public IPreguntarSiPedirOtraPersonaService CrearPreguntarSiPedirOtraPersonaService() {
-        return new PreguntarSiPedirOtraPersonaConsolaService();
+        return new PreguntarSiPedirOtraPreguntaGUIService();
     }
 
     @Override
     public IMostrarPersonasService CrearMostrarPersonasService() {
-        return new MostrarPersonasConsolaService();
+        return new MostrarPersonasGUIService();
     }
-   
-    
 }
+ 

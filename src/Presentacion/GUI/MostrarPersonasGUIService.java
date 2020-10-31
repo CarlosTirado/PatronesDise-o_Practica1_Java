@@ -3,30 +3,27 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Presentacion.Consola;
+package Presentacion.GUI;
 
 import Models.Persona;
 import Presentacion.Interfaces.IMostrarPersonasService;
 import java.util.ArrayList;
-import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 /**
  *
  * @author LENOVO
  */
-public class MostrarPersonasConsolaService implements IMostrarPersonasService {
+public class MostrarPersonasGUIService implements IMostrarPersonasService {
 
     @Override
     public void Mostrar(ArrayList<Persona> personas) {
         
-        
-        System.out.println("Resultado ---->");
+        JOptionPane.showMessageDialog(null, "A continuación mostraremos las personas registradas");
         
         for (Persona persona : personas)
         { 
-            System.out.println(persona.ToString());
+            JOptionPane.showMessageDialog(null, persona.ToString());
         }
-        
     }
-    
 }

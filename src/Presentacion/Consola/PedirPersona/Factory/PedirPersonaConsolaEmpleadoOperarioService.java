@@ -22,7 +22,7 @@ public class PedirPersonaConsolaEmpleadoOperarioService implements IPedirPersona
         EmpleadoOperario persona = new EmpleadoOperario();
         persona.SetIdentificacion(EntradaValorService.PedirValorTexto("Identificacion"));
         persona.SetNombre(EntradaValorService.PedirValorTexto("Nombre"));
-        persona.SetSalario(EntradaValorService.PedirValorNumeroDecimal("Salario base"));
+        persona.SetSalarioBase(EntradaValorService.PedirValorNumeroDecimal("Salario base"));
         persona.SetHorasExtras(EntradaValorService.PedirValorNumeroEntero("Horas extras"));
         System.out.println(""); 
         return persona; 

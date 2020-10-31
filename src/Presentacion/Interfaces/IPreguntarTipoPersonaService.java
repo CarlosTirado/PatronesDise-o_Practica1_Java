@@ -12,4 +12,4 @@ package Presentacion.Interfaces;
 public interface IPreguntarTipoPersonaService {
     String Preguntar();
 }
- 
+  

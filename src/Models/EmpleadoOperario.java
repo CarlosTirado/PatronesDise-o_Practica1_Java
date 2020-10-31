@@ -14,7 +14,7 @@ public class EmpleadoOperario extends Empleado{
     private int HorasExtras;
     
     @Override
-    public String MostrarPersona()
+    public String ToString()
     {
         return "Identificación: " + Identificacion + " - Nombre: " + Nombre + " - Salario base: " + SalarioBase + " - Salario total: " + GetSalarioTotal() + " -> (Empleado) -> (EmpleadoOperario)";
     }

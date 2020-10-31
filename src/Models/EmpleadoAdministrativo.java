@@ -12,7 +12,7 @@ package Models;
 public class EmpleadoAdministrativo extends Empleado{
     
     @Override
-    public String MostrarPersona()
+    public String ToString()
     {
         return "Identificación: " + Identificacion + " - Nombre: " + Nombre + " - Salario base: " + SalarioBase + " - Salario total: " + GetSalarioTotal() + " -> (Empleado) -> (EmpleadoAdministrativo)";
     }

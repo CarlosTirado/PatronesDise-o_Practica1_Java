@@ -21,7 +21,7 @@ public class PedirPersonaConsolaEmpleadoAdministrativoService implements IPedirP
         EmpleadoAdministrativo persona = new EmpleadoAdministrativo();
         persona.SetIdentificacion(EntradaValorService.PedirValorTexto("Identificacion"));
         persona.SetNombre(EntradaValorService.PedirValorTexto("Nombre"));
-        persona.SetSalario(EntradaValorService.PedirValorNumeroDecimal("Salario base"));
+        persona.SetSalarioBase(EntradaValorService.PedirValorNumeroDecimal("Salario base"));
         System.out.println("");
         return persona;
     }
