@@ -3,17 +3,22 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Services;
+package Presentacion.Consola.PedirPersona.Factory;
 
 import Models.Cliente;
+import Models.EmpleadoAdministrativo;
+import Models.EmpleadoOperario;
+import Models.Persona;
+import Presentacion.Consola.EntradaValorService;
 
 /**
  *
  * @author LENOVO
  */
-public class EntradaClienteService {
-    public static Cliente PedirCliente()
-    {
+public class PedirPersonaConsolaClienteService implements IPedirPersonaConsolaService {
+
+    @Override
+    public Persona PedirPersona() {
         System.out.println("Solicitando informacion de Cliente");
         Cliente persona = new Cliente();
         persona.SetIdentificacion(EntradaValorService.PedirValorTexto("Identificacion"));
@@ -23,4 +28,3 @@ public class EntradaClienteService {
         return persona;
     }
 }
-
