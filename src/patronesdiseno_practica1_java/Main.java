@@ -8,6 +8,7 @@ package patronesdiseno_practica1_java;
 import Models.Persona;
 import Presentacion.Consola.ManejadorPresentacionConsola;
 import Presentacion.GUI.ManejadorPresentacionGUI;
+import Presentacion.Hibrida.ManejadorPresentacionHibrida;
 import Presentacion.Interfaces.IManejadorPresentacionAbstractFactory;
 import Presentacion.Interfaces.IMostrarPersonasService;
 import Presentacion.Interfaces.IPedirPersonaService;
@@ -16,7 +17,7 @@ import Presentacion.Interfaces.IPreguntarTipoPersonaService;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-/** 
+/**  
  *
  * @author LENOVO 
  */
@@ -26,9 +27,15 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Boolean pedirOtraPersona = false;
+        Boolean pedirOtraPersona;
         ArrayList<Persona> personas = new ArrayList();
-        IManejadorPresentacionAbstractFactory manejadorPresentacionAbstractFactory = new ManejadorPresentacionGUI();
+        
+        IManejadorPresentacionAbstractFactory manejadorPresentacionAbstractFactory; 
+         
+        manejadorPresentacionAbstractFactory = new ManejadorPresentacionConsola();
+        //manejadorPresentacionAbstractFactory = new ManejadorPresentacionGUI();
+        //manejadorPresentacionAbstractFactory = new ManejadorPresentacionHibrida();
+
           
         do
         {
